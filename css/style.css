@@ -72,3 +72,33 @@ body{
     background-color: chartreuse;
     cursor: pointer;
 }
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+   body{
+       height: 800px;
+   }
+   h1{
+       font-size: 50px;
+       text-align: center;
+   }
+   .container{
+         width: 100%;
+         height: 50%;
+   }
+   .msgInp {
+    width: 80%;
+    height: 50px;
+    padding: 1px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+.btn{
+    margin-top: 5px;
+    width: 100px;
+    height: 50px
+}
+  }
