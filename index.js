@@ -9,16 +9,21 @@ app.get("/", (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`App is running at http://localhost:${port}`);
+// app.listen(port, () => {
+//   console.log(`App is running at http://localhost:${port}`);
+// });
+const server = app.listen(port, () => {
+  console.log("Listening on port: " + port);
 });
+const io = require("socket.io")(server);
 
 //node server that is responsible for handlinging socket.io connections
-const io = require("socket.io")(httpServer, {
-  cors: {
-    origin: "*",
-  },
-});
+// const io = require("socket.io")(httpServer, {
+//   cors: {
+//     origin: "*",
+//   },
+// });
+
 const users = {};
 io.on("connection", (socket) => {
   socket.on("new-user-joined", (usernm) => {
