@@ -7,7 +7,8 @@
     <script defer src="./js/client.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>nChat - Node Chat App With Socket</title>
-    <script src="https://nchat-production.up.railway.app/socket.io/socket.io.js"></script>
+    <!-- <script src="https://nchat-production.up.railway.app/socket.io/socket.io.js"></script> -->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
   </head>
   <body>
     <nav>
@@ -17,6 +18,7 @@
     <div class="container">
       <!-- <div class="message left">Basu: Hello there.. How are you all</div>
         <div class="message right">Dev: Hello there.. How are you all</div> -->
+      <div id="type"></div>
     </div>
     <div class="send">
       <form action="" id="send-container">
@@ -26,6 +28,7 @@
           name="msgInp"
           id="msgInp"
           placeholder="Your Message"
+          onfocus="typing()"
         />
         <button class="btn" type="submit">Send</button>
       </form>

@@ -41,4 +41,9 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("left", users[socket.id]);
     delete users[socket.id];
   });
+
+  socket.on("typing", (usernm) => {
+    // console.log(usernm);
+    socket.broadcast.emit("typing", users[socket.id]);
+  });
 });

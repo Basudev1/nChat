@@ -18,8 +18,13 @@ body{
     overflow: scroll;
     overflow-x: hidden;
 }
+#type{
+    position: fixed;
+    bottom: 195px;
+    font-weight: bold;
+    margin-left: 30%;
+}
 .message{
-    background-color: #adffa3;
     width: 24%;
     padding: 10px;
     margin: 17px 12px;
@@ -29,12 +34,14 @@ body{
 }
 .left{
     float: left;
-    clear: both
+    clear: both;
+    background-color:aliceblue;
 
 }
 .right{
     float: right;
     clear: both;
+    background-color: #adffa3;
 
 }
 .send{
