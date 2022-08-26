@@ -12,14 +12,14 @@ body{
 .container{
     margin: auto;
     width: 950px;
-    background: mediumaquamarine;
+    background: #eee;
     height: 60vh;
     border-radius: 10px;
     overflow: scroll;
     overflow-x: hidden;
 }
 .message{
-    background-color: gray;
+    background-color: #adffa3;
     width: 24%;
     padding: 10px;
     margin: 17px 12px;
@@ -38,7 +38,6 @@ body{
 
 }
 .send{
-   
     display: block;
     align-items: center;
     justify-content: center;
@@ -66,10 +65,10 @@ body{
     height: 44px;
     text-align: center;
     border-radius: 7px;
-    color: blue;
+    color: black;
     /* font-size: 20px; */
     font-weight: 600;
-    background-color: chartreuse;
+    background-color: #c5cae9;
     cursor: pointer;
 }
 h1{
@@ -86,7 +85,7 @@ h1{
        text-align: center;
    }
    .container{
-         width: 100%;
+         width: 90%;
          height: 50%;
    }
    .msgInp {
