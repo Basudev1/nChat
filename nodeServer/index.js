@@ -1,5 +1,5 @@
 //node server that is responsible for handlinging socket.io connections
-const io = require('socket.io')(4000, {
+const io = require('socket.io')(80, {
     cors: {
       origin: '*',
     }
