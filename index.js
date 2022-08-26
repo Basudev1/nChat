@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve("client", "index.html"));
 });
 
-const port = process.env.port || 3000;
+const port = process.env.port;
 app.listen(port, () => {
   console.log(`App is running at http://localhost:${port}`);
 });
