@@ -1,4 +1,4 @@
-const socket = io('http://localhost:4000');
+const socket = io('https://nchat-production.up.railway.app:80');
 const form = document.getElementById('send-container');
 const msgInput = document.getElementById('msgInp');
 const msgContainer = document.querySelector('.container');
