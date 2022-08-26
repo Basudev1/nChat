@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 app.use(express.static("client"));
+const httpServer = require("http").createServer();
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("client", "index.html"));
@@ -13,7 +14,7 @@ app.listen(port, () => {
 });
 
 //node server that is responsible for handlinging socket.io connections
-const io = require("socket.io")(4000, {
+const io = require("socket.io")(httpServer, {
   cors: {
     origin: "*",
   },
